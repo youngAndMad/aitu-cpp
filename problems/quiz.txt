@@ -1,0 +1,279 @@
+1.#include<iostream>
+using namespace std;
+template <class T >
+T cal(T a, T b)
+{
+    return (a%sizeof(b));
+}
+int main(){
+ cout<<cal<int>(11,2);   
+}answer(3);
+2.#include<iostream>
+using namespace std;
+struct p
+{
+    char a;
+    short b;
+    int c;
+};
+int main(){
+    cout<<sizeof(p);
+}answer(8);
+3.structure within structure is called: answer(nested structure);
+4.Which properly declares a variable of struct foo:answer();
+5.Which of the following is a properly defined struct: answer(struct a_struct{int a;};
+6.Which operator connects a structure and structure member: answer(.);
+7.Which of the following accesses a variable in the struct b:answer(b->var);
+8.The data elements int rhe struct are also known as what :answer (members);
+9.Which of the following statements is true about C++ structs:answer(members can be initialized on the one line);
+10.if you need a function that will handle multi-dimensional arrays,you must specify the following sizes inside the square brakets(all sizes);
+11.int a[2][3], a[0][0] ->adress = 0*00-6A3D0 answer(a[0][1]->adress=0*00-6A3D4);
+12.What function's declaration is right : answer(double squareCircle(double radius,double p=3.14));
+13.What are right for functions overloading ?(2 answers(same name,different parametrers));
+14.pow,sqrt-->cmath//cin,cout-->iostream//strlen,strcmp-->cstring;
+15.#include<iostream>
+using namespace std;
+void plus(int& x)
+{
+    x++;
+}
+int main(){
+    int a = 5;
+    plus(a);
+    cout<<a;
+}answer(6);
+16.#include<iostream>
+using namespace std;
+int main(){
+    int n=10;
+    int *p;
+    p=&n+1;
+    cout<<*(p-1);
+}answer(10);
+17.#include<iostream>
+using namespace std;
+int main(){
+    int i;
+    int* pi;
+    pi=&i;
+}answer(TRUE);
+18.Whar isn't right for Function pointers(assigned to another pointers);
+19.#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+   char src[20]="hasAAA";
+   char dest[20]="hasZZZ";
+   cout<<strncmp(src,dest,3);
+}answer(0);
+20.#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+   char src[20]="coding is ";
+   char dest[20]="easy";
+   strcat(src,dest);
+   cout<<src;
+}answer(coding is easy);
+21.#include<iostream>
+using namespace std;
+template <class T >
+T cal(T a, T b)
+{
+    return (a%sizeof(b));
+}
+int main(){
+ cout<<cal<int>(16,2);   
+}answer(0);
+22.#include<iostream>
+using namespace std;
+int main(){
+    int c=1,i,temp,n=3,j;
+    int arr[3][3]={11,12,13,14,15,1};
+    for(int i=1;i<n;i++)
+    {
+        for(int j=1;j<n;j++)
+        {
+            temp=arr[i][j]+c;
+            arr[i][j]=arr[j][i];
+        }
+    }
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            cout<<arr[i][j]<<" ";
+        }
+    }
+    
+}answer(11.12.13.14.15.0.0.0.0)
+24.int a[2][3]  a[0][0]-->adress =0*00-6A3D0 a[0][2]-->adress = 0*00-6A3D8;
+25.what are right for void functions(doesn't return value,it can use return)
+26.#include<iostream>
+using namespace std;
+void  plus(int& x)
+{
+     x++;
+}
+int main()
+{
+    int a = 5;
+    cout<<plus(a)+a;
+}answer(11);
+27.dereferencing operator: answer(*);
+28. The heap is : answer(a block of memory that controlled by programmer);
+29. New comand in c++ for: answer(allocate heap memory);
+30.What is not right for Pointer to pointer-->multiple dereference.....;
+31.Array of pointers.Dynamic 2-dim array declaration:answer(int**arr=new int*[n]);
+32.#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+   char src[]="funforfuns";
+   char dest[14];;
+   cout<<strncpy(src,dest,3);
+};answer(forfuns)?;
+33.What are right for inline function? answer(copy code into programm)(only a request to the compiler);
+34.a pointer variable stored: answer(adress of another variable);
+35.calliтg function using pointers bool: answer(*(compare)(int 1,int 2)(*compare)(int 1,int 2))
+36.What is not rihgt for array of pointers to function: answer(all function could have different...); 
+37.#include<iostream>
+using namespace std;
+int square(int);
+ int main(){
+cout<<square(9)<<"\n";     
+ }   
+inline int square(int x){
+  return x*x;
+ }(answer 81);
+38.#include<iostream>
+using namespace std;
+int main(){
+int n[2][3] = {{9,7,6},{5,1,2}};
+for(int i=1;i<3;i++)cout<<n[1][i];
+ }answer(12);
+39.What does this command do? int* ptr = NULL? answer(Creates a pointer of type integer that is initially pointing to null);
+40.What is output of this fragment of code? 
+int x=10,y=4;
+cout<<sizeof(x);
+cout<<sizeof(y)+x;
+answer(4 14);
+41.What is output of this fragment of code? 
+int a[]={0,1,2,3,4,5,6,7,8,9},n=10;
+for(int i=0;i<n/2;i++)cout<<a[i]<<" ";
+answer(0 1 2 3 4 );
+42.What is the result of this boolean expression !(0||0)? answer(1)(true);
+43.What is the result of this boolean expression !(1&& 1)? answer(0)(false);
+44.Choose the variant of the code that contains the mistake where loss of bit? answer(float x;int y;y=x+y);
+45.What is the output of the following fragment code?
+int x = 400;
+int a = 2;
+x%=3*a;
+cout<<x; answer(4);
+46.What will be the values of variables 'a' and 'x' after the executing the fragment code?
+int a = 5;
+long x = 3;
+a+=x;
+x=--x;
+answer(8  -2);
+47.What loops needs a 'semi colon'(;)after? answer(do) only while dont needs semicolons;
+48.Which for loop is correct? answer(for(int i=0;i<10;i++);)
+49.What's wrong? for(int k=2;k<=12;k++) answer (the increment should be ++k;)
+50.Which for loop will not work? answer(for(int i=5;i=10;i++))
+51.Find the output of below program
+int main(){
+  int x= 9;
+  while(x>0)x--;
+  cout<<x;
+  return 0;	
+}answer(0);
+52.Find rhe output of below program 
+int main(){
+  int i=0,x=0;
+  for(int i=1;i<10;i*=2)
+{
+x++;
+cout<<x;
+}
+cout<<x;
+}answer(1 2 3 4 4);
+53.Which of the following array declarations is invalid? answer(char array[30,0];)
+54.Given the following declaration, where is 77 stored in the scores array?
+inr scores[]={83,62,43,77,97}; answer(scores[3])
+55.What is the output of the following fragment code?
+char str[5]="ABC";
+cout<<str[2];
+cout<<str;
+answer(CABC);
+56.#include<iostream>
+using namespace std;
+int main(){
+   char arr[]= "sea";
+   cout<<sizeof(arr);
+}answer(4)
+57.#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+   cout<<sizeof(sqrt(2));
+}answer(8);
+58.#include<iostream>
+using namespace std;
+int main(){
+   char arr[5]= "sea";
+   cout<<sizeof(arr);
+}answer(5);
+59.#include<iostream>
+using namespace std;
+int main(){
+    int arr[5][2]={{0,1},{2,3},{4,5}};
+    for(int i=0;i<5;i++){
+        for(int j =0;j<2;j++){
+            arr[i][j]+=j%2;
+        }
+    }
+     for(int i=0;i<5;i++){
+        for(int j =0;j<2;j++){
+            cout<<arr[i][j]<<" ";
+        }
+    }
+    
+}output . answer(0 2 2 4 4  6 0 1 0 1 )
+60.#include<iostream>
+using namespace std;
+int main(){
+     bool a[ ][2]={{0,1},{1,0},{0,1},{1,0}};
+   cout<<sizeof(a);   
+}answer(8);
+61.C++ limits the number of arrat dimensions to two.answer(false);
+62.#include<iostream>
+using namespace std;
+void  plus(int x)
+{
+     x++;
+}
+int main()
+{
+    int a = 5;
+    cout<<plus(a);
+}answer(5)"x without reference in parametres in function";
+63.In C++ that the comand does:delete a;answer(free memory allocated for the variable a);
+64.Which statement true for pointer EXPECT? answer(The only ariphmetic operators....)?
+65.#include<iostream>
+using namespace std;
+int main(){
+ typedef int *p;
+ p x;
+ int y = 10;
+ x = &y;
+ cout<<*x;
+}answer(10);
+66.Array of pointers answer(char *arr[3]={"one","two","three"});
+67.#include <iostream>
+int main() {
+    std::cout<<(!(2+2==6) && 2+3==5);
+    return 0;
+}answer(true);
+68.What value will the variable "x" take: "float x = 3.14; x = 5 / 2;"?answer(3.14);
+69.Which looping process is best used when the number of iterations is known?answer(while);
+70.The _____ in switch statement is used to terminate the current sequence.(break);
